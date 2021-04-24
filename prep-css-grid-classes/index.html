@@ -17,11 +17,6 @@ h1 {
   text-align: center;
 }
 
-.position {
-  position: relative;
-  top: -10px;
-}
-
 .container {
   max-width: 992px;
   margin: auto;
@@ -40,10 +35,8 @@ h1 {
 
 img {
   width: 100%;
-}
-
-#shrink {
-  padding: 0.2rem;
+  height: 450px;
+  object-fit: contain;
 }
 
   </style>
@@ -55,9 +48,9 @@ img {
   <div class="container">
     <div class="row">
       <div class="column">
-        <img src="images/raiders.jpg" id="shrink">
-        <h3 class="position">Raiders of the Lost Ark</h3>
-        <p class="position">Young Harrison Ford</p>
+        <img src="images/raiders.jpg">
+        <h3>Raiders of the Lost Ark</h3>
+        <p>Young Harrison Ford</p>
       </div>
 
       <div class="column">
@@ -71,7 +64,7 @@ img {
         <h3>The Last Crusade</h3>
         <p>Indy finds the holy grail. Drinks water from it and is now going to live forever along with Harrison Ford.</p>
       </div>
-  </div>
+    </div>
   </div>
 </body>
 </html>
