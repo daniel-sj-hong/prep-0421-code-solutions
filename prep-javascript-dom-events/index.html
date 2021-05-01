@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Events</title>
+</head>
+
+<body>
+  <button class="hello-world-btn">Hello World!</button>
+  <script>
+    // Your code here
+    function contentLoaded() {
+      console.log('content loaded!');
+    }
+    document.addEventListener('DOMContentLoaded', contentLoaded);
+
+    function mouseMove() {
+      console.log('mouse is moving');
+    }
+    window.addEventListener('mousemove', mouseMove);
+
+    function helloWorld() {
+      console.log('hello world!');
+    }
+    var $helloWorld = document.querySelector('hello-world-btn');
+    addEventListener('click', helloWorld);
+
+  </script>
+</body>
+
+</html>
